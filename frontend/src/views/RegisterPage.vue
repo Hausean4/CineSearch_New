@@ -10,7 +10,7 @@
           <ion-row justify-content-center>
             <ion-col align-self-center size-md="6" size-lg="5" size-xs="12">
               <div text-center>
-                <h1>CineSearch Registration</h1>
+                <h3>CineSearch Registration</h3>
               </div>
               <div padding>
                 <ion-item>
