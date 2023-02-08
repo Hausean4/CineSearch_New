@@ -5,10 +5,11 @@ import javax.persistence.Id;
 
 @Entity
 public class Provider {
+    
     @Id
     private String providerName;
     private String URL;
-    
+
     public String getProviderName() {
         return providerName;
     }
@@ -21,6 +22,4 @@ public class Provider {
     public void setURL(String uRL) {
         URL = uRL;
     }
-
-
 }
