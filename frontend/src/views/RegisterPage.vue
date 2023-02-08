@@ -1,60 +1,43 @@
 <template>
-  <ion-page>
-    <ion-header>
-      <ion-toolbar>
-        <ion-title>Registrierung</ion-title>
-      </ion-toolbar>
-    </ion-header>
-    <ion-content :fullscreen="true">
-      <ion-header collapse="condense">
-        <ion-toolbar>
-          <ion-title size="large">Registrieren</ion-title>
-        </ion-toolbar>
-      </ion-header>
-      <ion-list>
-        <ion-item :key="todo.id" v-for="todo in todos">
-          <ion-grid>
-            <ion-row>
-              <ion-col>
-                {{ todo.title }}
-              </ion-col>
-              <ion-col>
-                <ion-button color="danger" v-if="!todo.done && !todo.archived"
-                  @click="finishTodo(todo)">Finish</ion-button>
-                <ion-button color="success" v-if="todo.done && !todo.archived"
-                  @click="archiveTodo(todo)">Archive</ion-button>
-              </ion-col>
-            </ion-row>
-          </ion-grid>
-        </ion-item>
-      </ion-list>
-      <ion-item>
-        <ion-input type="text" placeholder="New Todo Title" v-model="newTodo.title"></ion-input>
-      </ion-item>
-      <div padding>
-        <ion-button @click="addTodo()">Add New ToDo</ion-button>
-      </div>
-    </ion-content>
-  </ion-page>
-</template>
-
-<script setup lang="ts">
-import {
-  IonPage,
-  IonHeader,
-  IonToolbar,
-  IonTitle,
-  IonContent,
-  IonCol,
-  IonRow,
-  IonGrid,
-  IonItem,
-  IonList,
-  IonButton,
-  IonInput,
-} from "@ionic/vue";
-import { useTodos } from "../composables/useTodos";
-
-const { newTodo, todos, getTodos, addTodo, finishTodo, archiveTodo } = useTodos();
-
-</script>
+    <ion-page>
+      <ion-content :fullscreen="true" padding>
+        <ion-grid>
+          <ion-row justify-content-center>
+            <ion-col align-self-center size-md="6" size-lg="5" size-xs="12">
+              <div text-center>
+                <h1>CineSearch Registration</h1>
+              </div>
+              <div padding>
+                <ion-item>
+                  <ion-input type="email" placeholder="E-Mail Adresse" v-model="mail"></ion-input>
+                </ion-item>
+                <ion-item>
+                  <ion-input type="password" placeholder="Password" v-model="password"></ion-input>
+                </ion-item>
+              </div>
+              <div padding>
+                <ion-button size="large" @click="signup" expand="block">Registrieren</ion-button>
+              </div>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-content>
+    </ion-page>
+  </template>
+  
+  <script setup lang="ts">
+  import {
+    IonPage,
+    IonContent,
+    IonInput,
+    IonRow,
+    IonCol,
+    IonGrid,
+    IonButton,
+    IonItem,
+  } from "@ionic/vue";
+  import { Signup } from "../composables/signup";
+  
+  const { mail, password, signup } = Signup();
+  
+  </script>
