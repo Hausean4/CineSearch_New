@@ -9,7 +9,7 @@
               </div>
               <div padding>
                 <ion-item>
-                  <ion-input type="mail" placeholder="E-Mail Adresse" v-model="mail"></ion-input>
+                  <ion-input type="email" placeholder="E-Mail Adresse" v-model="mail"></ion-input>
                 </ion-item>
                 <ion-item>
                   <ion-input type="password" placeholder="Password" v-model="password"></ion-input>
