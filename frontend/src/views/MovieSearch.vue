@@ -15,7 +15,7 @@
               </ion-item>
             </div>
             <div padding>
-              <ion-button size="large" @click="search" expand="block">Search</ion-button>
+              <ion-button size="large" expand="block">Search</ion-button>
             </div>
           </ion-col>
         </ion-row>

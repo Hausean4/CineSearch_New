@@ -5,7 +5,7 @@
             "name": "Launch CineSearch",
             "request": "launch",
             "mainClass": "ch.zhaw.gpi.CineSearch.CineSearch",
-            "projectName": "LeanToDo"
+            "projectName": "backend"
         },
         {
             "type": "java",
