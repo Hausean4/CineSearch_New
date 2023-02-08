@@ -4,7 +4,6 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.ManyToOne;
 
 @Entity
 public class Movie {
@@ -14,9 +13,6 @@ public class Movie {
     private Long movieId;
     private String movieName;
     private String movieGenre;
-
-    @ManyToOne
-    private Provider provider;
     
     public Long getMovieId() {
         return movieId;
