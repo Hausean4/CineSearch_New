@@ -16,10 +16,13 @@ h3{
     text-align: center;
 }
 
-  ion-content {
+  ion-content{
     --background: url('../theme/cinemaphoto.jpg')
 
   }
-  
+
+  ion-title{
+    font-size: 25px;
+  }
 
 
