@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch CineSearch",
+            "request": "launch",
+            "mainClass": "ch.zhaw.gpi.CineSearch.CineSearch",
+            "projectName": "backend"
+        },
+        {
+            "type": "java",
             "name": "Spring Boot-LeanToDo<LeanToDo>",
             "request": "launch",
             "cwd": "${workspaceFolder}",
