@@ -29,6 +29,4 @@ import { IonPage, IonHeader, IonToolbar, IonTitle, IonContent } from '@ionic/vue
 import { search } from 'ionicons/icons';
 import {CallAPI} from '../api/callApi';
 
-CallAPI();
-
 </script>
