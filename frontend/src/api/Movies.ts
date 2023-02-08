@@ -1,7 +1,7 @@
 export interface Movies(){
-    id: String
-    name: String
-    origincountry: String
+    Id: String
+    Name: String
+    OriginCountry: String
     
 }
 
