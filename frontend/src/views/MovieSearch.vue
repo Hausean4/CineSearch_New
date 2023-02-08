@@ -15,7 +15,7 @@
               </ion-item>
             </div>
             <div padding>
-              <ion-button size="large" @click="search" expand="block">Search</ion-button>
+              <ion-button size="large" @click="CallAPI" expand="block">Search</ion-button>
             </div>
           </ion-col>
         </ion-row>
@@ -27,5 +27,8 @@
 <script setup lang="ts">
 import { IonPage, IonHeader, IonToolbar, IonTitle, IonContent } from '@ionic/vue';
 import { search } from 'ionicons/icons';
+import {CallAPI} from '../api/callApi';
+
+CallAPI();
 
 </script>

@@ -1,5 +1,10 @@
 <template>
     <ion-page>
+      <ion-header>
+        <ion-toolbar>
+          <ion-title>Registrierung</ion-title>
+        </ion-toolbar>
+      </ion-header>
       <ion-content :fullscreen="true" padding>
         <ion-grid>
           <ion-row justify-content-center>
