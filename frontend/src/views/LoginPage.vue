@@ -1,12 +1,14 @@
 <template>
   <ion-page>
+    <ion-header>
+      <ion-toolbar>
+        <ion-title>CineSearch Login</ion-title>
+      </ion-toolbar>
+    </ion-header>
     <ion-content :fullscreen="true" padding>
       <ion-grid>
         <ion-row justify-content-center>
           <ion-col align-self-center size-md="6" size-lg="5" size-xs="12">
-            <div text-center>
-              <h1>CineSearch Login</h1>
-            </div>
             <div padding>
               <ion-item>
                 <ion-input type="text" placeholder="Login Name" v-model="username"></ion-input>
