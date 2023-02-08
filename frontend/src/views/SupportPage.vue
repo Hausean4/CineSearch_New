@@ -11,7 +11,7 @@
           <ion-title size="large">Projects</ion-title>
         </ion-toolbar>
       </ion-header>
-      <form ref="form" @submit.prevent="sendEmail">
+      <form ref="form" @submit="sendEmail">
         <label>Name</label>
         <input type="text" name="user_name" />
         <label>Email</label>
