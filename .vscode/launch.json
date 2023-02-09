@@ -5,6 +5,13 @@
             "name": "Launch CineSearch",
             "request": "launch",
             "mainClass": "ch.zhaw.CineSearch.CineSearch",
+            "projectName": "CineSearch"
+        },
+        {
+            "type": "java",
+            "name": "Launch CineSearch",
+            "request": "launch",
+            "mainClass": "ch.zhaw.CineSearch.CineSearch",
             "projectName": "LeanToDo"
         },
         {

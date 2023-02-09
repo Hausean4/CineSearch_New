@@ -15,11 +15,7 @@
               </ion-item>
             </div>
             <div padding>
-<<<<<<< HEAD
               <ion-button size="large" @click="getData" expand="block">Search</ion-button>
-=======
-              <ion-button size="large" expand="block">Search</ion-button>
->>>>>>> 1c98205e25817ae8d8d36ee8811fffba3b03f937
             </div>
           </ion-col>
         </ion-row>
@@ -34,11 +30,8 @@
 <script setup lang ="ts">
 import { IonPage, IonHeader, IonToolbar, IonTitle, IonContent } from '@ionic/vue';
 import { search } from 'ionicons/icons';
-<<<<<<< HEAD
 import axios from 'axios'
-  import { ref } from 'vue';
-=======
->>>>>>> 1c98205e25817ae8d8d36ee8811fffba3b03f937
+import { ref } from 'vue';
 
   const listItems = ref([]);
 
