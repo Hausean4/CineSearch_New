@@ -27,6 +27,14 @@
 <script setup lang="ts">
 import { IonPage, IonHeader, IonToolbar, IonTitle, IonContent } from '@ionic/vue';
 import { search } from 'ionicons/icons';
-import {CallAPI} from '../api/callApi';
+import axios from 'axios'
+function CallAPI(){
+axios.get('https://localhost:8080/api/movie')
+  .then((response) => {
+  return response.data;
+  })
+
+}
+
 
 </script>
