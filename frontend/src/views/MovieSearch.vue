@@ -15,26 +15,29 @@
               </ion-item>
             </div>
             <div padding>
-              <ion-button size="large" @click="CallAPI" expand="block">Search</ion-button>
+              <ion-button size="large" @click="getData" expand="block">Search</ion-button>
             </div>
           </ion-col>
         </ion-row>
       </ion-grid>
+      <div v-for="item in listItems" :key="item.name">
+        {{item.name}}
+      </div>
     </ion-content>
   </ion-page>
 </template>
 
-<script setup lang="ts">
+<script setup lang ="ts">
 import { IonPage, IonHeader, IonToolbar, IonTitle, IonContent } from '@ionic/vue';
 import { search } from 'ionicons/icons';
 import axios from 'axios'
-function CallAPI(){
-axios.get('https://localhost:8080/api/movie')
-  .then((response) => {
-  return response.data;
-  })
+  import { ref } from 'vue';
 
-}
+  const listItems = ref([]);
 
-
+  async function getData() {
+    const res = await fetch("localhost:8080/api/movies/");
+    const finalRes = await res.json();
+    listItems.value = finalRes;
+  }
 </script>
