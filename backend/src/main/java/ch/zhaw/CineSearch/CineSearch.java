@@ -4,7 +4,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class CineSearch {
+public class CineSearch{
 
     /**
      * Haupt-Methode, welche beim Run-Befehl eine
