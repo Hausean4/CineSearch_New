@@ -1,4 +1,4 @@
-<template>
+<!-- <template>
   <ion-page>
     <ion-header>
       <ion-toolbar>
@@ -20,6 +20,38 @@
         <textarea name="message"></textarea>
         <input type="submit" value="Send" />
       </form>
+    </ion-content>
+  </ion-page>
+</template>
+ -->
+<template>
+  <ion-page>
+    <ion-header>
+      <ion-toolbar>
+        <ion-title>Support</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content :fullscreen="true" padding>
+      <ion-grid>
+        <ion-row justify-content-center>
+          <ion-col align-self-center size-md="6" size-lg="5" size-xs="12">
+            <div text-center>
+              <h3>CineSearch Support</h3>
+            </div>
+            <div>
+              <form ref="form" @submit="sendEmail">
+                <label>Name</label>
+                <input type="text" name="user_name" />
+                <label>Email</label>
+                <input type="email" name="user_email" />
+                <label>Message</label>
+                <textarea name="message"></textarea>
+                <input type="submit" value="Send" />
+              </form>
+            </div>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
     </ion-content>
   </ion-page>
 </template>
