@@ -3,6 +3,11 @@ p{
    text-align: center;
 }
 
+input{
+  color: rgb(255, 255, 255);
+  align-items: center;
+}
+
 .center {
     display: block;
     margin-left: auto;
@@ -10,6 +15,10 @@ p{
     width: 100%;
     opacity: 1;
   }
+
+.sendButton{
+  margin: 0.8cm 3cm 2cm 3cm;
+}
 
 h3{
     color: rgb(255, 255, 255);
