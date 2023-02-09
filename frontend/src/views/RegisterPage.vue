@@ -10,9 +10,9 @@
           <ion-row justify-content-center>
             <ion-col align-self-center size-md="6" size-lg="5" size-xs="12">
               <div text-center>
-                <h1>CineSearch Registration</h1>
+                <h3>CineSearch Registration</h3>
               </div>
-              <div padding>
+              <div>
                 <ion-item>
                   <ion-input type="email" placeholder="E-Mail Adresse" v-model="mail"></ion-input>
                 </ion-item>
@@ -20,7 +20,7 @@
                   <ion-input type="password" placeholder="Password" v-model="password"></ion-input>
                 </ion-item>
               </div>
-              <div padding>
+              <div>
                 <ion-button size="large" @click="signup" expand="block">Registrieren</ion-button>
               </div>
             </ion-col>
