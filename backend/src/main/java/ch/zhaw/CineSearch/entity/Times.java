@@ -44,20 +44,4 @@ public class Times {
     public void setShowtimesTime(String showtimesTime) {
         this.showtimesTime = showtimesTime;
     }
-
-    public Cinema getCinema() {
-        return cinema;
-    }
-
-    public void setCinema(Cinema cinema) {
-        this.cinema = cinema;
-    }
-
-    public Movie getMovie() {
-        return movie;
-    }
-
-    public void setMovie(Movie movie) {
-        this.movie = movie;
-    }
 }
