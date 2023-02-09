@@ -14,6 +14,9 @@
               </div>
               <div>
                 <ion-item>
+                  <ion-input type="text" placeholder="Name" v-model="name"></ion-input>
+                </ion-item>
+                <ion-item>
                   <ion-input type="email" placeholder="E-Mail Adresse" v-model="mail"></ion-input>
                 </ion-item>
                 <ion-item>
@@ -41,8 +44,17 @@
     IonButton,
     IonItem,
   } from "@ionic/vue";
+import { ref } from "vue";
+
+  /*
   import { Signup } from "../composables/signup";
-  
-  const { mail, password, signup } = Signup();
-  
+  const { mail, password, signup } = Signup(); */
+  const name = ref();
+  const mail = ref();
+  const password = ref();
+
+  function signup(){
+
+  }
+
   </script>

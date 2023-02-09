@@ -1,3 +1,0 @@
-INSERT INTO USER(USER_NAME, E_MAIL, PASSWORD) VALUES ('test', 'test@hotmail.com', 'test');
-INSERT INTO MOVIE(MOVIE_ID, MOVIE_GENRE, MOVIE_NAME) VALUES (1, 'test', 'test');
-INSERT INTO PROVIDER(PROVIDER_NAME, URL) VALUES ('test', 'abc.asdw.ch');
