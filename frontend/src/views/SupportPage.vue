@@ -1,29 +1,3 @@
-<!-- <template>
-  <ion-page>
-    <ion-header>
-      <ion-toolbar>
-        <ion-title>SupportPage</ion-title>
-      </ion-toolbar>
-    </ion-header>
-    <ion-content :fullscreen="true">
-      <ion-header collapse="condense">
-        <ion-toolbar>
-          <ion-title size="large">Projects</ion-title>
-        </ion-toolbar>
-      </ion-header>
-      <form ref="form" @submit="sendEmail">
-        <label>Name</label>
-        <input type="text" name="user_name" />
-        <label>Email</label>
-        <input type="email" name="user_email" />
-        <label>Message</label>
-        <textarea name="message"></textarea>
-        <input type="submit" value="Send" />
-      </form>
-    </ion-content>
-  </ion-page>
-</template>
- -->
 <template>
   <ion-page>
     <ion-header>
@@ -38,15 +12,15 @@
             <div text-center>
               <h3>CineSearch Support</h3>
             </div>
-            <div>
+            <div style="text-align: center;">
               <form ref="form" @submit="sendEmail">
-                <label>Name</label>
-                <input type="text" name="user_name" />
-                <label>Email</label>
-                <input type="email" name="user_email" />
-                <label>Message</label>
-                <textarea name="message"></textarea>
-                <input type="submit" value="Send" />
+                <label><p>Name</p></label>
+                <input type="text" name="user_name" /> <br>
+                <label><p>Email</p></label>
+                <input type="email" name="user_email" /> <br>
+                <label><p>Message</p></label>
+                <textarea name="message"></textarea> <br>
+                <ion-button class="sendButton" size="medium" @click="send" expand="block">Send</ion-button>
               </form>
             </div>
           </ion-col>
@@ -66,6 +40,7 @@ import {
 } from "@ionic/vue";
 import {ref, onMounted } from 'vue'
 import emailjs from "@emailjs/browser";
+import { send } from "ionicons/icons";
 
 const form = ref<any>(null);
 
